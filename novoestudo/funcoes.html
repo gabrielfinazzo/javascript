@@ -7,7 +7,7 @@
     <title>Estudos JavaScript</title>
     <script>
 
-        function calcularAreaTerreno( largura, comprimento ) {
+        /* function calcularAreaTerreno( largura, comprimento ) {
 
             //lógica
             var area = largura * comprimento
@@ -22,7 +22,16 @@
 
         var area = calcularAreaTerreno(largura, comprimento)
 
-        document.write('O terreno possui ' + area + ' metros quadrados.')
+        document.write('O terreno possui ' + area + ' metros quadrados.') */
+
+        function soma (a, b) {
+            //b = b === undefined ? 0 : b // caso não sejá passado o parâmetro b.
+            return a + b
+        }
+
+        console.log(soma(7, 7))
+        console.log(soma(7, 7 ,8 ,9)) // O javascript desconsidera os parâmetros adicionais.
+        console.log(soma(7)) // O valor de b será undefined, o resultado será NaN (not a number)
 
     </script>
 </head>
