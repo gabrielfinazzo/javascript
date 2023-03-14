@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio IMC</title>
+    <script>
+
+        var nome = prompt('Digite o seu nome:')
+        var altura = parseFloat(prompt('Digite a sua altura (cm):'))
+        var peso = parseFloat(prompt('Digite o seu peso:'))
+        altura /= 100
+        var M = peso / (altura * altura)
+        var classificao = ''
+        
+
+        if (M < 16) {
+            classificao = 'Baixo peso, muito grave!'
+        } else if (M >= 16 && M <= 16.99) {
+            classificao = 'Baixo peso, grave!'
+        } else if (M >= 17 && M <= 18.49) {
+            classificao = 'Peso baixo.'
+        } else if (M >= 18.50 && M <= 24.99) {
+            classificao = 'Peso normal.'
+        } else if (M >= 25 && M <= 29.99) {
+            classificao = 'Sobrepeso.'
+        } else if (M >= 30 && M <= 34.99) {
+            classificao = 'Obesidade grau I'
+        } else if (M >= 35 && M <= 39.99) {
+            classificao = 'Obesidade grau II'
+        } else {
+            classificao = 'Obesidade grau III'
+        }
+
+        document.write('Olá, ' + nome + ' ! Tendo ' + altura + 'm de altura e pesando ' + peso + 'kg seu IMC será de ' + M + ', portando sua classificação é de: ' + classificao )
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
