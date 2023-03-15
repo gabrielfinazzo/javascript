@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos JavaScript</title>
+    <script>
+
+        /* function exibirArtigo(id, callbackSucesso, callbackErro) {
+            //lógica: recuperar o id via requisição http
+            if (true) {
+                callbackSucesso('Funções de callback em JS', 'Funções de callback são muito utilizadas...')
+            } else {
+                callbackErro('Erro ao recuperar os dados')
+            }
+        }
+
+        var callbackSucesso = function(titulo, descricao) {
+            document.write('<h1>' + titulo + '</h1>')
+            document.write('<hr/>')
+            document.write('<p>' + descricao + '</p>')
+        }
+
+        var callbackErro = function(erro) {
+            document.write('<p><b>Erro: </b>' + erro + '</p>')
+        }
+
+        exibirArtigo(1, callbackSucesso, callbackErro) */
+
+        function estudarMateria(estudoPortugues, estudoMatematica) {
+            if (true) {
+                estudoPortugues('Produção de texto', 'gramática', 'Interpretação de textos')
+            } else {
+                estudoMatematica('Matemática básica', 'Matemática intermediária', 'Matemática avançada')
+            }
+        }
+
+        var estudoPortugues = function(port1, port2, port3) {
+            document.write('A matéria escolhida foi Português, escolha uma das três opções para iniciar os estudos: </br><hr>' + port1 + '</br>'+port2 + '</br>' +port3)
+        }
+
+        var estudoMatematica = function(mat1, mat2, mat3) {
+            document.write('A matéria escolhida foi Matemática, escolha umas das três opções para iniciar os estudos: </br><hr>' + mat1 + '</br>' + mat2 + '</br>' + mat3)
+        }
+
+        estudarMateria(estudoPortugues, estudoMatematica)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
