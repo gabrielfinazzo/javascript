@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos JavaScript</title>
+    <script>
+
+        //propriedade length - Tras o valor total de caracteres utilizados, incluindos os espaços utilizados
+        document.write('Jorge Sant Ana'.length + '<br>')
+
+        
+
+        //propriedade charAt - Tras a letra contida no numero da memória desejado
+        document.write('Jorge Sant Ana'.charAt(7) + '<br>')
+
+        // propriedade indexOF - Tras o primeiro número da memória referente ao caracter desejado
+        var nome = 'Jorge Sant Ana'
+        document.write(nome.indexOf('a') + '<br>')
+
+        // propriedade replace - Permite substituir textos desejados
+        document.write(nome.replace('Sant Ana', 'Silva') + '<br>')
+
+        //propriedade substr - Permite recortar uma parte desejada da string
+        //Nesse exemplo, será recortado 4 caracteres após o sexto caracter
+        document.write(nome.substr(6, 4) + '<br>')
+
+        //propriedade toLowerCase - Transforma os caracteres em caixa baixa
+        document.write(nome.toLowerCase() + '<br>')
+
+        //propriedade toUpperCase - Transforma os caracteres em caixa alta
+        document.write(nome.toUpperCase() + '<br>')
+
+        //método trim - remove os espaços em branco do início e do final de uma string
+        var nome = '   Jorge Sant Ana   '
+        document.write(nome.length + '<br>')
+        document.write((nome.trim()).length)
+
+        //Resultado
+        /* 14
+            a
+            7
+            Jorge Silva
+            Sant
+            jorge sant ana
+            JORGE SANT ANA
+            20 -> Com os espaços são 20 caractres no total
+            14  -> Usando a propriedade trim os espaços iniciais e finais são excluidos, totalizando 14 caracteres
+        */
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

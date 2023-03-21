@@ -28,7 +28,7 @@
 
         exibirArtigo(1, callbackSucesso, callbackErro) */
 
-        function estudarMateria(estudoPortugues, estudoMatematica) {
+        /* function estudarMateria(estudoPortugues, estudoMatematica) {
             if (true) {
                 estudoPortugues('Produção de texto', 'gramática', 'Interpretação de textos')
             } else {
@@ -44,7 +44,26 @@
             document.write('A matéria escolhida foi Matemática, escolha umas das três opções para iniciar os estudos: </br><hr>' + mat1 + '</br>' + mat2 + '</br>' + mat3)
         }
 
-        estudarMateria(estudoPortugues, estudoMatematica)
+        estudarMateria(estudoPortugues, estudoMatematica) */
+
+        function escolherTipoPokemon(tipoAgua, tipoFogo) {
+            var tipo = prompt('Digite agua ou fogo para escolher o tipo do pokemon desejado: ')
+            if (tipo == 'agua') {
+                tipoAgua('Blastoise', 'Feralighator', 'Empoleon')
+            } else {
+                tipoFogo('Charizard', 'Typhlosion', 'Infernape')
+            }
+        }
+
+        var tipoAgua = function(agua1, agua2, agua3) {
+            document.write('O tipo do pokemon escolhido foi água, por favor escolha um entre esses três pokemons: </br> <hr>' + agua1 + '</br>' + agua2 + '</br>' + agua3 )
+        } 
+
+        var tipoFogo = function(fogo1, fogo2, fogo3) {
+            document.write('O tipo do pokemon escolhido foi fogo, por favor escolha um entre esses três pokemons </br> <hr>' + fogo1 + '</br>' + fogo2 + '</br>' + fogo3)
+        }
+
+        escolherTipoPokemon(tipoAgua, tipoFogo)
 
     </script>
 </head>
