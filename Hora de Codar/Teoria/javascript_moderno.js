@@ -70,3 +70,83 @@ console.log(nome4)
 const numeros = [1, 2, 3, 4];
 const [primeiro, segundo, terceiro] = numeros
 console.log(primeiro, segundo, terceiro);
+
+
+// spread operator => espalhamento
+const array1 = [1, 2, 3];
+const array2 = [...array1, 4, 5, 6];
+
+console.log(array2);
+
+const soma2 = (...args) => args.reduce((total, numero) => total + numero, 0);
+
+console.log(soma2(1, 2, 3, 4, 4, 5, 7));
+
+
+// default parameters
+function saudacao(nome = "Visitante") {
+    console.log(`Olá, ${nome}!`);
+};
+
+saudacao();
+saudacao("Matheus");
+
+
+// object literals enhancements
+// {nome: "Matheus"}
+
+const nomeNovo = "Felipe";
+const idadeNova = 24
+const pessoaNova = {nomeNovo, idadeNova};
+
+console.log(pessoaNova);
+
+
+const saudacaoObject = {
+    dizerOi() {
+        console.log("Oi");
+    }
+};
+
+saudacaoObject.dizerOi();
+
+
+// classes e heranças
+class Pessoa {
+    constructor(nome, idade) {
+        this.nome = nome
+        this.idade = idade
+    }
+
+    falar() {
+        console.log(`Olá pessoal, meu nome é ${this.nome}`);
+    }
+}
+
+const joao = new Pessoa("João", 34);
+
+console.log(joao);
+
+joao.falar();
+
+const pedro = new Pessoa("Pedro", 21);
+
+class Funcionario extends Pessoa {
+    constructor(nome, idade, salario) {
+        super(nome, idade)
+        this.salario = salario;
+    }
+
+    falarFuncionario() {
+        super.falar()
+        console.log(`Eu ganho R${this.salario}`);
+    }
+}
+
+const mario = new Funcionario("Mario", 44, 3200);
+
+console.log(mario);
+
+mario.falar();
+
+mario.falarFuncionario();
