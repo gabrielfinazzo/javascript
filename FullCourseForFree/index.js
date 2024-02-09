@@ -1,16 +1,10 @@
 
-let loggedIn = false;
-let username;
-let password;
+for(let i = 1; i <= 20; i++) {
 
-while(!loggedIn) {
-    username = window.prompt("Enter your username:");
-    password = window.prompt("Enter your password");
-
-    if(username === "myUsername" && password === "myPassword") {
-        loggedIn = true;
-        console.log("You are logged in!");
+    if(i == 13) {
+        continue;
     } else {
-        console.log("Invalid credentials! Please try again");
+        console.log(i);
     }
+    
 }
